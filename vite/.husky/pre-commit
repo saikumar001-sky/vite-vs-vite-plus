@@ -1,0 +1,4 @@
+# vite/: lint-staged (oxlint + oxfmt) then unit tests
+(cd vite && npx lint-staged && npx vitest run)
+# vite-plus/: one built-in command, rules live in vite.config.ts
+(cd vite-plus && npx vp staged)
